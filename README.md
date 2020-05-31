@@ -1,13 +1,11 @@
 # Cough
-Short description and motivation.
+Simple health check for your rails application.
 
 ## Usage
-You just have to mount this rails engine in your routes file
+Mount the engine in your `config/routes.rb` file, using any preferred path.
 ```
-mount Cough::Engine => '/cough'
+mount Cough::Engine => '/health'
 ```
-
-or to any other path your prefer.
 
 ## Installation
 Add this line to your application's Gemfile:
