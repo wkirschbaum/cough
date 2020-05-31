@@ -6,6 +6,7 @@ Cough::Engine.routes.draw do
       200, { 'Content-Type' => 'application/json' },
       [
         {
+          service: ENV['SERVICE_NAME'],
           version: ENV['COMMIT'].to_s.strip,
           job: ENV['JOB'].to_s.strip,
           stage: ENV['STAGE'].to_s.strip

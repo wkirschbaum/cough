@@ -7,6 +7,10 @@ Mount the engine in your `config/routes.rb` file, using any preferred path.
 mount Cough::Engine => '/health'
 ```
 
+The following environment variables can be set
+
+SERVICE_NAME, COMMIT, JOB, STAGE
+
 ## Installation
 Add this line to your application's Gemfile:
 
