@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  mount Cough::Engine => "/cough"
+  mount Cough::Engine => '/cough'
 end

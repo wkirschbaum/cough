@@ -1,31 +1,33 @@
-$:.push File.expand_path("lib", __dir__)
+# frozen_string_literal: true
+
+$LOAD_PATH.push File.expand_path('lib', __dir__)
 
 # Maintain your gem's version:
-require "cough/version"
+require 'cough/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "cough"
+  spec.name        = 'cough'
   spec.version     = Cough::VERSION
-  spec.authors     = ["Wilhelm Hugo Kirschbaum"]
-  spec.email       = ["wkirschbaum@gmail.com"]
-  spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of Cough."
-  spec.description = "TODO: Description of Cough."
-  spec.license     = "MIT"
+  spec.authors     = ['Wilhelm Hugo Kirschbaum']
+  spec.email       = ['wkirschbaum@gmail.com']
+  spec.homepage    = 'TODO'
+  spec.summary     = 'TODO: Summary of Cough.'
+  spec.description = 'TODO: Description of Cough.'
+  spec.license     = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
   else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
+    raise 'RubyGems 2.0 or newer is required to protect against ' \
+      'public gem pushes.'
   end
 
-  spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  spec.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  spec.add_dependency "rails", "~> 6.0.3", ">= 6.0.3.1"
+  spec.add_dependency 'rails', '~> 6.0.3', '>= 6.0.3.1'
 
-  spec.add_development_dependency "sqlite3"
+  spec.add_development_dependency 'sqlite3'
 end
